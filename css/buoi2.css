@@ -1,0 +1,252 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+	font-family: 'Roboto';
+	font-size: 16px;
+	margin: 0;
+	color: #666666;
+}
+header{
+	width: 100%;
+	height: 60px;
+	background-color: lightpink;
+	box-shadow: 5px 5px 5px lightgrey;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.logo{
+	padding: 12px;
+}
+.menu ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 60px;
+}
+.menu ul li a{
+	padding: 20px;
+	border-radius: 20px;
+}
+.menu ul li a:hover{
+	background: white;
+	color: lightpink;
+}
+.text-den{
+	color: black;
+}
+.text-do{
+	color: red;
+}
+#home{
+	width: 100%;
+	min-height: 1000px;
+	padding-top: 70px;
+	background-image: url("../img/bg-header.png"), url("../img/profile.png");
+	background-repeat: no-repeat;
+	background-position: top left, right bottom;
+}
+#home h1{
+	font-size: 50px;
+}
+.pt-5{
+	padding-top: 250px;
+}
+#about{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 70px;
+}
+#about h1{
+	font-size:70px;
+	color: black;
+}
+#skill{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 70px;
+}
+#skill h1{
+	font-size: 40px;
+}
+#skill .w3-bar{
+	width: 100%;
+	border: 1px solid #B46Af4;
+	display: flex;
+	border-radius: 5px;
+}
+.progress{
+	width: 100%;
+	height: 5px;
+	background-color: lightgray;
+	border-radius: 20px;
+}
+.bar{
+	height: 5px;
+	border-radius: 20px;
+}
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid lightpink;
+	display: flex;
+  background-color: #f1f1f1;
+	border-radius: 5px;
+}
+#skill .tab button {
+  background: none;
+	border-radius: 5px;
+	width: 50%;
+	color: gray;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+#skill .tab button:hover {
+  background-color: grey;;
+	color: white;
+}
+#skill .tab button.active {
+  background-color: lightpink;
+	color: white;
+}
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#services{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 70px;
+}
+#services h1{
+	font-size: 40px;
+}
+#services .service{
+	width: 100%;
+	height: 200px;
+	display: flex;
+}
+.service-icon{
+	border: 1px solid lightpink;
+	width: 180px;
+	height:180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.service-icon i{
+	font-size: 40px;
+	color: lightpink;
+	transition: all 0.6s;
+}
+.service:hover .service-icon i{
+	font-size: 60px;
+}
+.service .service-text{
+	height: 180px;
+	width: 100%;
+	padding: 10px;
+	transition: all 0.6s;
+}
+.service:hover .service-text{
+	background-color: lightpink;
+	color: white;
+}
+#projects{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 70px;
+}
+#projects h1{
+	font-size: 40px;
+}
+#projects .tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+ background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+  border-bottom: 2px solid lightpink;
+	color: lightpink;
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  border-bottom: 2px solid #FF798D;
+	color: #FF798D;
+}
+
+/* Style the tab content */
+#projects .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#testimonial{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 70px;
+}
+#testimonial .cam-nhan{
+	text-align: center; display: flex; flex-direction: column;
+	justify-content: center; align-items: center;padding: 20px 60px;
+}
+#testimonial .cam-nhan img{
+	width: 100px; height: 100px; border-radius: 50%;
+}
+#testimonial .cam-nhan .vien{
+	width: 100px; height: 100px; border-radius: 50%; border: 1px solid lightpink; padding: 7px;
+}
+#slide1 .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide1 .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: lightgray;
+}
+
+#slide1 .owl-nav .owl-next{ position:absolute; right:5%;}
+#slide1 .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slide1 .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:blue;
+      text-decoration: none; }
+
+#sp .owl-nav { position:absolute; left:0px; top:35%; width:100%; }
+#sp .owl-nav [class*='owl-'] {
+	font-size:25px;border:1px solid #8E8E8E;  color: black;width: 40px;
+}
+
+#sp .owl-nav .owl-next{ position:absolute; right:-4%;}
+#sp .owl-nav .owl-prev{ position:absolute; left:-4%;}
+#sp .owl-nav [class*='owl-']:hover {
+      background:none;
+      color:blue;
+      text-decoration: none; }
+
+#contact{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 70px;
+}
+#contact h1{
+	font-size: 40px;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
